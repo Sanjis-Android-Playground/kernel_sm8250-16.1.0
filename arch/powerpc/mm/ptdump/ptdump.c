@@ -28,6 +28,11 @@
 #include <asm/page.h>
 #include <asm/pgalloc.h>
 
+<<<<<<< HEAD:arch/powerpc/mm/dump_linuxpagetables.c
+=======
+#include "ptdump.h"
+
+>>>>>>> 32b2cebd505e (Merge tag 'ASB-2023-09-05_4.19-stable' of https://android.googlesource.com/kernel/common):arch/powerpc/mm/ptdump/ptdump.c
 #ifdef CONFIG_PPC32
 #define KERN_VIRT_START	0
 #endif

@@ -2528,6 +2528,18 @@ static const struct dmi_system_id bridge_d3_blacklist[] = {
 			DMI_MATCH(DMI_PRODUCT_VERSION, "RevB"),
 		},
 	},
+	{
+		/*
+		 * Downstream device is not accessible after putting a root port
+		 * into D3cold and back into D0 on Elo Continental Z2 board
+		 */
+		.ident = "Elo Continental Z2",
+		.matches = {
+			DMI_MATCH(DMI_BOARD_VENDOR, "Elo Touch Solutions"),
+			DMI_MATCH(DMI_BOARD_NAME, "Geminilake"),
+			DMI_MATCH(DMI_BOARD_VERSION, "Continental Z2"),
+		},
+	},
 #endif
 	{ }
 };
